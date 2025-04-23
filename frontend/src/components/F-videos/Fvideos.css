@@ -1,0 +1,81 @@
+.fvideo-container {
+    padding: 4rem 1rem;
+    background: #fffef9;
+    text-align: center;
+  }
+  
+  .fvideo-title {
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 2.5rem;
+  }
+  
+  .fvideo-wrapper {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .fvideo-card {
+    min-width: 280px;
+    max-width: 280px;
+    background: #fffaf3;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.07);
+    padding: 1rem;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .fvideo-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .fvideo {
+    width: 160px;
+    height: 280px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .fvideo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fvideo-quote {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 0.6rem;
+    padding: 0 0.5rem;
+    position: relative;
+  }
+  
+  .fvideo-quote::before {
+    content: "“";
+    font-size: 2rem;
+    color: #ff7b00;
+    position: absolute;
+    left: -12px;
+    top: -10px;
+  }
+  
+  .fvideo-stars img {
+    width: 18px;
+    margin: 0 2px;
+  }
+  
+  .fvideo-name {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  

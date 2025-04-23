@@ -1,0 +1,106 @@
+.header {
+    position: relative;
+    height: 60vh; /* Adjust as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.8; /* Optional: slightly dim the video */
+  }
+  
+  .header-contents {
+    position: relative;
+    z-index: 1;
+    color: #000000;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .header-contents h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header-contents p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .header-contents button {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff6347; /* Tomato-like color */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-contents button:hover {
+    background-color: #e5533c;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header {
+      height: 90vh;
+      padding: 1rem;
+    }
+  
+    .header-contents h2 {
+      font-size: 1.8rem;
+    }
+  
+    .header-contents p {
+      font-size: 1rem;
+    }
+  
+    .header-contents {
+      padding: 1rem;
+    }
+  }
+  
+  /* Video Swap Logic */
+  .desktop-video {
+    display: block;
+  }
+  
+  .mobile-video {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-video {
+      display: none;
+    }
+  
+    .mobile-video {
+      display: block;
+    }
+  }
+  
+  

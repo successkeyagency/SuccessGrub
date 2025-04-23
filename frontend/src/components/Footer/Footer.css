@@ -1,0 +1,142 @@
+.footer {
+    background: #f9f9f9;
+    color: #333;
+    padding: 60px 30px 20px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footer-logo {
+    width: 140px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-tagline {
+    font-size: 14px;
+    color: #666;
+    max-width: 260px;
+    line-height: 1.6;
+  }
+  
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 12px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-links ul li:hover {
+    color: #e36414;
+    transform: translateX(5px);
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-socials img {
+    width: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-socials img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-contact p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+  }
+  
+  /* ✨ Animations */
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  @keyframes slideUp {
+    from {transform: translateY(20px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+  }
+  
+  .animate-fade {
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  .animate-slide-up {
+    animation: slideUp 1s ease-out;
+  }
+  .animate-fade-slow {
+    animation: fadeIn 2s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 20px 15px;
+      text-align: center;
+    }
+  
+    .footer-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .footer-logo {
+      margin: 0 auto 15px;
+    }
+  
+    .footer-tagline {
+      max-width: 100%;
+      font-size: 13px;
+    }
+  
+    .footer-links h4,
+    .footer-contact h4 {
+      font-size: 15px;
+    }
+  
+    .footer-links ul li,
+    .footer-contact p {
+      font-size: 13px;
+    }
+  
+    .footer-socials {
+      justify-content: center;
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+      padding-top: 15px;
+    }
+  }
+  
+  
