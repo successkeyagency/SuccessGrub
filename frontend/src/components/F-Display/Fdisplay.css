@@ -21,9 +21,10 @@
   gap: 25px;
   justify-content: center;
   align-items: stretch;
-  max-width: 1300px;
+  max-width: 100%;
   margin: auto;
 }
+
 
 @media (max-width: 768px) {
   .food-display {
