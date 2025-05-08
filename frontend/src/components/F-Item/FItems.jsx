@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import './Fitems.css';
+import './FItems.css';
 import { assets } from '../../assets/assets.js';
 import { Scontext } from '../../context/Scontext';
 import { toast } from 'react-toastify';
