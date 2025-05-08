@@ -65,7 +65,7 @@ const reviews = [
 const Fvideos = () => {
   return (
     <section className="fvideo-container">
-      <h2 className="fvideo-title">🍽️ Fvideos — Food Lover Reviews</h2>
+      <h2 className="fvideo-title">🍽️ Food Lover Reviews</h2>
       <div className="fvideo-wrapper">
         {reviews.map((review, index) => (
           <div className="fvideo-card" key={index}>

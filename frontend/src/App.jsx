@@ -6,6 +6,9 @@ import Cart from "./views/Cart/Cart";
 import PlaceOrder from "./views/PlaceOrder/PlaceOrder";
 import Footer from "./components/footer/Footer";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
+import Verify from "./views/Verify/Verify";
+import Myorders from "./views/MyOrders/Myorders";
+import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
 
@@ -22,9 +25,12 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<PlaceOrder />} />
+          <Route path="/Verify" element={<Verify/>} />
+          <Route path="/myorders" element={<Myorders/>} />
         </Routes>
         <Footer />
       </div>
+      <ToastContainer position="top-right" autoClose={2000} />
     </>
   );
 };

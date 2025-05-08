@@ -1,27 +1,60 @@
 .food-display {
-    padding: 60px 40px;
-    background-color: #fff;
-    text-align: center;
-    width: 80%;
-    margin: auto;
+  padding: 60px 40px;
+  background-color: #fff;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.food-display h2 {
+  font-size: 2.8rem;
+  font-family: 'Playfair Display', serif;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1300px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .food-display {
+    padding: 40px 20px;
+    width: 90%;
   }
-  
+
   .food-display h2 {
-    font-size: 2.8rem;
-    font-family: 'Playfair Display', serif;
-    color: #1a1a1a;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
   }
-  
+
   .food-display-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    justify-content: center;
-    align-items: stretch;
-    max-width: 1300px;
-    margin: auto;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .food-display {
+    padding: 30px 15px;
+    width: 95%;
+  }
+
+  .food-display h2 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .food-display-list {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+  }
+}

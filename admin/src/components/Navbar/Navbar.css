@@ -1,0 +1,42 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 0.75rem 2rem;
+    height: 60px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  
+  .logo {
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .greeting {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0f0; 
+  }
+  
+  .profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0f0;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .profile:hover {
+    transform: scale(1.05);
+  }
+  

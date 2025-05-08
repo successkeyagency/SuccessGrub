@@ -4,7 +4,7 @@ import { Scontext } from '../../context/Scontext'
 import { useNavigate } from 'react-router-dom'
 
 const Cart = () => {
-  const { cartItems, food_list, removeFromCart, getTotalCartAmount } = useContext(Scontext)
+  const { cartItems, food_list, removeFromCart, getTotalCartAmount, url} = useContext(Scontext)
 
   const [promoCode, setPromoCode] = useState("")
   const [discount, setDiscount] = useState(0)
@@ -40,7 +40,7 @@ const Cart = () => {
           if (cartItems[item._id] > 0) {
             return (
               <div key={item._id} className='cart-items-title cart-item-item'>
-                <img src={item.image} alt={item.name} />
+                <img src={url+"/images/"+item.image} alt={item.name} />
                 <p>{item.name}</p>
                 <p>${item.price}</p>
                 <p>{cartItems[item._id]}</p>
@@ -65,10 +65,6 @@ const Cart = () => {
             <p>Delivery Fee</p>
             <p>${deliveryFee.toFixed(2)}</p>
           </div>
-          <div className="cart-total-details">
-            <p>Promo Discount</p>
-            <p>-${discount.toFixed(2)}</p>
-          </div>
           <hr />
           <div className="cart-total-details total-highlight">
             <b>Total</b>
@@ -76,15 +72,7 @@ const Cart = () => {
           </div>
         </div>
 
-        <div className="cart-promo">
-          <input 
-            type="text" 
-            placeholder="Enter promo code" 
-            value={promoCode} 
-            onChange={(e) => setPromoCode(e.target.value)} 
-          />
-          <button onClick={handleApplyPromo}>Apply</button>
-        </div>
+
 
         <button onClick={()=>navigate('/order')} className="checkout-btn">PROCEED TO CHECKOUT</button>
       </div>

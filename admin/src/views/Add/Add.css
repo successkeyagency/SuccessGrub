@@ -1,0 +1,165 @@
+.add {
+  width: 70%;
+  margin-left: max(5vw,15px);
+  margin-top: 50px;
+  }
+  
+  form {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .add-img-upload label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .add-img-upload label:hover {
+    border-color: #888;
+    background-color: #f0f0f0;
+  }
+  
+  .add-img-upload img {
+    width: 100px;
+    height: auto;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #4CAF50;
+  }
+
+  .add-category-price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .add-category,
+  .add-price {
+    flex: 1;
+  }
+  
+  .add-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #43a047;
+  }
+  
+@media (max-width: 480px) {
+    .add {
+      width: 95%;
+      padding: 1rem;
+    }
+  
+    form {
+      padding: 1rem;
+    }
+  
+    .add-img-upload img {
+      width: 80px;
+    }
+  
+    .add-btn {
+      font-size: 0.9rem;
+      padding: 0.65rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .add {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  
+    form {
+      padding: 1.5rem;
+    }
+  
+    .add-category-price {
+      flex-direction: column;
+    }
+  
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .add {
+      width: 80%;
+      padding: 2rem;
+    }
+  
+    form {
+      padding: 2rem;
+    }
+  
+    .add-img-upload img {
+      width: 90px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .add {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .add {
+        width: 90%;
+    }
+  
+    form {
+      padding: 1.5rem;
+    }
+  
+    .add-category-price {
+      flex-direction: column;
+    }
+  }
+  
