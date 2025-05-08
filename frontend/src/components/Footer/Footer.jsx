@@ -7,9 +7,16 @@ const Footer = () => {
     <footer className="footer" id='footer'>
       <div className="footer-grid">
 
-        <div className="footer-brand animate-fade">
-          <img src={assets.logo} alt="SuccessGrub" className="footer-logo" />
-          <p className="footer-tagline">Flavors that warm your soul. Delivered fresh, every time.</p>
+        <div className="footer-built animate-slide-up">
+          <h4>Made by</h4>
+          <img src={assets.successkeyAgency_logo} alt="" className='footer-logo' />
+          <p>
+            <strong>SuccessKeyAgency LLC</strong><br />
+            Custom Web Solutions for Restaurants & Brands<br />
+            <a href="https://successkeyagency.com" target="_blank" rel="noopener noreferrer" className="footer-link">
+              www.successkeyagency.com
+            </a>
+          </p>
         </div>
 
         <div className="footer-links animate-slide-up">
@@ -27,6 +34,8 @@ const Footer = () => {
           <p>333-221-2134</p>
           <p>support@successgrub.com</p>
         </div>
+
+        
 
       </div>
 

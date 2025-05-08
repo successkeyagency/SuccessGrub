@@ -1,0 +1,140 @@
+.reservation-list {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  font-size: 1rem;
+  color: #444;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+td {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  overflow: auto;
+}
+
+tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+button {
+  padding: 8px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+button.accept {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.decline {
+  background-color: #f44336;
+  color: white;
+}
+
+button.accept:hover {
+  background-color: #45a049;
+}
+
+button.decline:hover {
+  background-color: #e02f2f;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+
+  .reservation-list table thead {
+    display: none;
+  }
+
+  .reservation-list table tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .reservation-list table td {
+    display: block;
+    padding-left: 50%;
+    position: relative;
+    text-align: left;
+  }
+
+  .reservation-list table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

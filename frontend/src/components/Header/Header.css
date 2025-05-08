@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    height: 60vh; /* Adjust as needed */
+    height: 60vh; 
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    opacity: 0.8; /* Optional: slightly dim the video */
+    opacity: 0.8; 
   }
   
   .header-contents {
@@ -51,7 +51,7 @@
   
   .header-contents button {
     padding: 0.8rem 1.5rem;
-    background-color: #ff6347; /* Tomato-like color */
+    background-color: #ff6347; 
     border: none;
     color: white;
     border-radius: 5px;
@@ -64,7 +64,6 @@
     background-color: #e5533c;
   }
   
-  /* Responsive Styles */
   @media (max-width: 768px) {
     .header {
       height: 90vh;
@@ -84,7 +83,6 @@
     }
   }
   
-  /* Video Swap Logic */
   .desktop-video {
     display: block;
   }

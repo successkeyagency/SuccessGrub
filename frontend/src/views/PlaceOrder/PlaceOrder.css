@@ -1,102 +1,155 @@
+
 .place-order {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    max-width: 1100px;
-    margin: auto;
-    font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 20px;
+}
+
+.place-order-left, .place-order-right {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+}
+
+.place-order-left input,
+.place-order-right input,
+.place-order-right button {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+
+.multi-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.multi-fields input {
+  flex: 1;
+  min-width: 48%;
+}
+
+.promo-code-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.promo-code-section input {
+  width: 100%;
+  padding: 14px 15px;
+  font-size: 14px;
+}
+
+.promo-code-section button {
+  padding: 14px 20px;
+  font-size: 14px;
+  width: 100%;
+  background-color: #30bfa0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.promo-code-section button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.promo-code-section button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(72, 189, 61, 0.6);
+}
+
+.cart-total-details p {
+  font-size: 14px;
+}
+
+.cart-total-details {
+  margin: 10px 0;
+}
+
+.place-order-right button {
+  font-size: 16px;
+  padding: 14px 20px;
+  margin-top: 20px;
+  background-color: #17bc1f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.place-order-right button:hover {
+  background-color: #00ff51; 
+  transform: scale(1.05);
+}
+
+.place-order-right button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 140, 186, 0.6);
+}
+
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
   }
-  
-  .place-order-left,
-  .place-order-right {
-    flex: 1;
-    min-width: 300px;
+
+  .place-order-left, .place-order-right {
+    max-width: 100%;
   }
-  
-  .title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  input {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: 0.3s ease;
-  }
-  
-  input:focus {
-    outline: none;
-    border-color: #38bdf8;
-    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.3);
-  }
-  
-  .multi-fields {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-  }
-  
+
   .multi-fields input {
-    flex: 1;
+    min-width: 100%;
   }
-  
+
+  .place-order-right {
+    max-width: 100%;
+  }
+
   .cart-total {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-  }
-  
-  .cart-total h2 {
-    margin-bottom: 1rem;
-    color: #111;
-  }
-  
-  .cart-total-details {
-    display: flex;
-    justify-content: space-between;
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    color: #444;
-  }
-  
-  .total-highlight {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #000;
-  }
-  
-  button {
-    margin-top: 1.5rem;
     width: 100%;
-    padding: 0.9rem;
-    background-color: #22c55e;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s ease;
   }
-  
-  button:hover {
-    background-color: #16a34a;
+
+  .place-order-right button {
+    font-size: 16px;
+    padding: 14px 20px;
+    margin-top: 20px;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .place-order {
-      flex-direction: column;
-    }
+}
+
+@media (max-width: 500px) {
+  .place-order-left input,
+  .place-order-right input,
+  .place-order-right button {
+    font-size: 12px;
+    padding: 10px 12px;
   }
-  
+
+  .multi-fields input {
+    font-size: 12px;
+  }
+
+  .place-order-right button {
+    font-size: 14px;
+  }
+
+  .promo-code-section input {
+    font-size: 16px;
+    padding: 14px 20px;
+  }
+
+  .promo-code-section button {
+    font-size: 16px;
+    padding: 14px 20px;
+  }
+}

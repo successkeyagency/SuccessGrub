@@ -1,4 +1,3 @@
-/* Basic Food Item Styles */
 .food-item {
     background-color: #fafafa;
     border-radius: 20px;
@@ -92,48 +91,44 @@
     font-weight: bold;
     color: #1a1a1a;
   }
-  
-  
-  /* Flex container for food items */
+
   .food-items-wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Default to 4 items per row */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px 0;
   }
   
-  /* Tablet: 3 items per row */
+
   @media (max-width: 1024px) {
     .food-items-wrapper {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
-  /* Mobile: 2 items per row */
   @media (max-width: 768px) {
     .food-items-wrapper {
-      grid-template-columns: repeat(2, 1fr);  /* 2 items per row */
+      grid-template-columns: repeat(2, 1fr);  
       gap: 16px;
     }
   
     .food-item-image {
-      height: 160px;  /* Adjust image height for mobile */
+      height: 160px; 
     }
   
     .food-item-info {
       padding: 10px;
     }
   }
-  
-  /* Extra small mobile: 1 item per row */
+
   @media (max-width: 480px) {
     .food-items-wrapper {
-        grid-template-columns: repeat(2, 1fr);  /* 2 items per row */
+        grid-template-columns: repeat(2, 1fr);  
         gap: 12px;
       }
   
     .food-item-image {
-      height: 140px;  /* Adjust image height for very small screens */
+      height: 140px;  
     }
   }
   

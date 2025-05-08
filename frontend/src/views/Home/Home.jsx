@@ -4,7 +4,8 @@ import Header from '../../components/Header/Header'
 import MExplore from '../../components/M-Explore/MExplore'
 import Fdisplay from '../../components/F-Display/Fdisplay'
 import Fvideos from '../../components/F-videos/Fvideos'
-import Fblogs from '../../components/F-blogs/Fblogs'
+import ContactAndLocation from '../../components/Contact-Location/ContactAndLocation'
+import Reservation from '../../components/Reservation/Reservation'
 
 const Home = () => {
 
@@ -16,7 +17,8 @@ const Home = () => {
         <MExplore category={category} setCategory={setCategory}/>
         <Fdisplay category={category} />
         <Fvideos />
-        {/* <Fblogs /> */}
+        <Reservation />
+        <ContactAndLocation />
     </div>
   )
 }
