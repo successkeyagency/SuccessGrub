@@ -49,16 +49,15 @@
     margin-bottom: 2rem;
   }
   
-  .header-contents button {
-    padding: 0.8rem 1.5rem;
-    background-color: #ff6347; 
-    border: none;
+  .button-style {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5a5f;
     color: white;
-    border-radius: 5px;
+    text-decoration: none;
+    border-radius: 8px;
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+  }  
   
   .header-contents button:hover {
     background-color: #e5533c;

@@ -80,7 +80,7 @@ const Add = ({url}) => {
               </option>
               <option value="Starters">Starters</option>
               <option value="Mains">Mains</option>
-              <option value="Deserts">Deserts</option>
+              <option value="Dessert">Dessert</option>
               <option value="Drinks">Drinks</option>
              
             </select>

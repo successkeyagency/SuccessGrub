@@ -9,7 +9,7 @@ import successkeyAgency_logo from './ChatGPT Image Apr 12, 2025, 08_44_27 PM-min
 
 import menu_starter from './scott-eckersley-R-7_ErUOLxw-unsplash.jpg'
 import menu_mains from './orkun-orcan-3ru16c1mSsU-unsplash.jpg'
-import menu_deserts from './flavio-shibata-z_eoi3ppf5U-unsplash.jpg'
+import menu_Dessert from './flavio-shibata-z_eoi3ppf5U-unsplash.jpg'
 import menu_drinks from './kaylee-jooste-8pEnHYMn_Ds-unsplash.jpg'
 
 
@@ -33,8 +33,8 @@ export const menu_list = [
         menu_image: menu_mains
     },
     {
-        menu_name: "Deserts",
-        menu_image: menu_deserts
+        menu_name: "Dessert",
+        menu_image: menu_Dessert
     },
     {
         menu_name: "Drinks",
