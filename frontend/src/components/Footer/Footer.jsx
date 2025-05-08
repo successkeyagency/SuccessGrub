@@ -22,10 +22,10 @@ const Footer = () => {
         <div className="footer-links animate-slide-up">
           <h4>Menu</h4>
           <ul>
-            <li>Top Dishes</li>
-            <li>Specials</li>
-            <li>Beverages</li>
-            <li>Desserts</li>
+            <li><a href="#explore-menu">Top Dishes</a></li>
+            <li><a href="#explore-menu">Specials</a></li>
+            <li><a href="#explore-menu">Beverages</a></li>
+            <li><a href="#explore-menu">Desserts</a></li>
           </ul>
         </div>
 
