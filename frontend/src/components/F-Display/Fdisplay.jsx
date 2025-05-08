@@ -8,6 +8,10 @@ const Fdisplay = ({category}) => {
 
     const {food_list} = useContext(Scontext)
 
+    if (!food_list || food_list.length === 0) {
+      return <p>Loading or no items to show...</p>
+    }
+
 
   return (
     <div className='food-display' id='food-display'>
@@ -20,8 +24,10 @@ const Fdisplay = ({category}) => {
                 
             })}
         </div>
+        
 
     </div>
+    
   )
 }
 

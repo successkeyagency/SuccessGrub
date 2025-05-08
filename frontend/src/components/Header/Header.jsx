@@ -28,7 +28,7 @@ const Header = () => {
           From fresh ingredients to unforgettable tastes, we bring you food crafted with love, care,
           and a commitment to excellence. Join us on a culinary adventure that’s just as unique as you are.
         </p>
-        <a href="#explore-menu" class="button-style">View Menu</a>
+        <a href="#explore-menu" className="button-style">View Menu</a>
       </div>
     </div>
   )
