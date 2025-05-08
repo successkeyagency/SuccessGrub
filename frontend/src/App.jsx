@@ -7,7 +7,7 @@ import PlaceOrder from "./views/PlaceOrder/PlaceOrder";
 import Footer from "./components/Footer/Footer";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
 import Verify from "./views/Verify/Verify";
-import Myorders from "./views/MyOrders/Myorders";
+import Myorders from "./views/MyOrders/MyOrders";
 import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
