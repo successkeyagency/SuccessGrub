@@ -26,7 +26,7 @@ const FItems = ({ id, name, price, description, image }) => {
   return (
     <div className='food-item'>
       <div className='food-item-container'>
-        <img className='food-item-image' src={`${url}/images/${image}`} alt={name} />
+        <img className='food-item-image' src={image} alt={name} />
         {itemCount === 0 ? (
           <img
             className='add'
