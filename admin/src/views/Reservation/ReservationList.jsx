@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./ReservationList.css";
 
+
+
+const API_BASE_URL = import.meta.env.VITE_BACKEND_URL;
+
+
 const ReservationList = () => {
   const [reservations, setReservations] = useState([]);
 
   useEffect(() => {
     const fetchReservations = async () => {
       try {
-        const res = await fetch("http://localhost:4000/api/reservations");
+        const res = await fetch(`${API_BASE_URL}/api/reservations`);
         const data = await res.json();
         data.sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -21,7 +26,7 @@ const ReservationList = () => {
 
   const handleStatusChange = async (id, status) => {
     try {
-      const res = await fetch(`http://localhost:4000/api/reservations/${id}`, {
+      const res = await fetch(`${API_BASE_URL}/api/reservations/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
