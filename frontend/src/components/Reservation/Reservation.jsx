@@ -35,7 +35,7 @@ const Reservation = () => {
 
   return (
     <div className="reservation-container">
-      <video className="video-background" autoPlay loop muted>
+      <video className="video-background" autoPlay loop muted playsInline disablePictureInPicture>
         <source src={assets.resvid} type="video/mp4" />
       </video>
 
