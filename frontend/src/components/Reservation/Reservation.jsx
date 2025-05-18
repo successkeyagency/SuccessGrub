@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Reservation.css";
+import { assets } from "../../assets/assets";
 
 const Reservation = () => {
   const [formData, setFormData] = useState({
@@ -35,7 +36,7 @@ const Reservation = () => {
   return (
     <div className="reservation-container">
       <video className="video-background" autoPlay loop muted>
-        <source src="https://videos.pexels.com/video-files/5791733/5791733-uhd_2732_1440_25fps.mp4" type="video/mp4" />
+        <source src={assets.resvid} type="video/mp4" />
       </video>
 
       <form className="reservation-form" onSubmit={handleSubmit}>

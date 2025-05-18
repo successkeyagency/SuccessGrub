@@ -1,0 +1,73 @@
+.admin-dashboard {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.admin-feature {
+  margin-bottom: 2.5rem;
+  border-left: 4px solid orange;
+  padding-left: 1rem;
+}
+
+.admin-feature img {
+  width: 100%;
+  max-width: 600px; 
+  border-radius: 8px;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.admin-feature img:hover {
+  transform: scale(2.2); 
+  z-index: 10; 
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+.admin-feature h2 {
+  color: orange;
+}
+
+.admin-footer {
+  background: #fef3e2;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+  text-align: center;
+  color: #444;
+}
+
+.admin-footer h3 {
+  color: #d47500;
+  margin-bottom: 1rem;
+}
+.admin-gallery .gallery-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+  padding-bottom: 10px; 
+}
+
+.admin-gallery .gallery-grid img {
+  flex: 1 0 auto; 
+  max-width: 180px; 
+  height: auto;
+  border-radius: 8px;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.admin-gallery .gallery-grid img:hover {
+  transform: scale(1.05);
+}

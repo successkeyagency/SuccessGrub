@@ -8,9 +8,16 @@ const Fdisplay = ({category}) => {
 
     const {food_list} = useContext(Scontext)
 
-    if (!food_list || food_list.length === 0) {
-      return <p>Loading or no items to show...</p>
-    }
+   if (!food_list || food_list.length === 0) {
+  return (
+    <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+      <div className="loading-spinner" aria-label="Loading menu..."></div>
+      <p>Loading menu...</p>
+    </div>
+  )
+}
+
+
 
 
   return (

@@ -40,6 +40,7 @@ const Add = ({ url }) => {
       formData.append("category", data.category);
       formData.append("image", image);
 
+      console.log("using URL:", url)
       const response = await axios.post(`${url}/api/food/add`, formData);
 
       if (response.data.success) {

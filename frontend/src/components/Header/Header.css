@@ -43,6 +43,10 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
+  .header-contents h2 span {
+    color: #e5533c;
+    text-decoration:underline;
+  }
   
   .header-contents p {
     font-size: 1.1rem;
