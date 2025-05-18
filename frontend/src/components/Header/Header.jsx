@@ -1,9 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Header.css";
 import { assets } from "../../assets/assets";
 
 const Header = () => {
   const mobileVideoRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   useEffect(() => {
     const video = mobileVideoRef.current;
@@ -28,19 +36,15 @@ const Header = () => {
         preload="auto"
         disablePictureInPicture
         poster={assets.imageposter_desk}
-      ></video>
+      />
 
-      <video
-        className="header-video mobile-video"
-        src={assets.mobile_vid}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        disablePictureInPicture
-        poster={assets.imageposter_phone}
-      ></video>
+        {isMobile && (
+        <img
+          className="header-video mobile-fallback-image"
+          src={assets.imageposter_phone}
+          alt="Mobile Header"
+        />
+      )}
 
       <div className="header-contents">
         <h2>
