@@ -54,10 +54,16 @@ const Navbar = ({ setShowLogin }) => {
         <a href="#footer" onClick={() => { setMenu("Contact Us"); handleLinkClick(); }} className={menu === "Contact Us" ? "active" : ""}>
           📞 Contact Us
         </a>
+        <Link 
+          to="/admin" 
+          onClick={() => { setMenu("Admin"); handleLinkClick(); }} 
+          className={`${menu === "Admin" ? "active" : ""} admin-link`}
+        >
+          🛠️ Admin
+        </Link>
       </ul>
 
       <div className="navbar-right">
-        <span>🔍</span> 
         <div className="navbar-search-icon">
           <Link to="/cart" onClick={handleLinkClick}>
             <span>🛒</span> 

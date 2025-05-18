@@ -79,6 +79,20 @@
   color: #fff;
   text-decoration: none;
 }
+.navbar-menu .admin-link {
+  color: orange;
+  font-weight: bold;
+  border: 2px solid orange;
+  border-radius: 8px;
+  padding: 6px 10px;
+  transition: 0.3s ease;
+}
+
+.navbar-menu .admin-link:hover {
+  background-color: orange;
+  color: white;
+}
+
 
 @media (min-width: 769px) {
  
