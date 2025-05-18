@@ -14,6 +14,8 @@ const Header = () => {
         playsInline
         preload="auto"
         disablePictureInPicture
+        poster={assets.imageposter_desk}
+
       ></video>
 
       <video
@@ -25,6 +27,8 @@ const Header = () => {
         playsInline
         preload="auto"
         disablePictureInPicture
+        poster={assets.imageposter_phone}
+
       ></video>
 
       <div className="header-contents">

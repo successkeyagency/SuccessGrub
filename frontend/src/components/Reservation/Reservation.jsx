@@ -35,7 +35,15 @@ const Reservation = () => {
 
   return (
     <div className="reservation-container">
-      <video className="video-background" autoPlay loop muted playsInline disablePictureInPicture>
+      <video
+        className="video-background"
+        autoPlay
+        loop
+        muted
+        playsInline
+        disablePictureInPicture
+        poster={assets.res_poster} 
+      >
         <source src={assets.resvid} type="video/mp4" />
       </video>
 
@@ -62,18 +70,8 @@ const Reservation = () => {
           onChange={handleChange}
           required
         />
-        <input
-          type="date"
-          name="date"
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="time"
-          name="time"
-          onChange={handleChange}
-          required
-        />
+        <input type="date" name="date" onChange={handleChange} required />
+        <input type="time" name="time" onChange={handleChange} required />
         <input
           type="number"
           name="numberOfPeople"

@@ -1,8 +1,24 @@
 import React from 'react';
 import './MExplore.css';
 import { menu_list } from '../../assets/assets';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 
 const MExplore = ({ category, setCategory }) => {
+  const location = useLocation();
+
+useEffect(() => {
+  if (location.hash === "#explore-menu") {
+    const el = document.getElementById("explore-menu");
+    if (el) {
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth" });
+      }, 100); 
+    }
+  }
+}, [location]);
+
   return (
     <div className='explore-menu' id='explore-menu'>
       <h1>

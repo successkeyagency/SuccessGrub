@@ -25,6 +25,11 @@ import Phone_3 from './Screenshot 2025-05-18 at 12.16.37 PM.png'
 import Phone_4 from './Screenshot 2025-05-18 at 12.17.13 PM.png'
 import phone_5 from './Screenshot 2025-05-18 at 12.17.43 PM.png'
 
+import imageposter_desk from './pexels-hergafi-8504687-min.jpg'
+import imageposter_phone from './pexels-valeriya-29380158-min.jpg'
+import res_poster from './pexels-iamabdullahsheik-9659592-min.jpg'
+
+
 
 export const assets = {
     logo,
@@ -45,7 +50,10 @@ export const assets = {
     phone_2,
     Phone_3,
     Phone_4,
-    phone_5
+    phone_5,
+    imageposter_desk,
+    imageposter_phone,
+    res_poster
 }
 
 export const menu_list = [
