@@ -27,6 +27,11 @@
     max-width: 800px;
     animation: fadeInUp 1s ease forwards;
   }
+  .header-video.mobile-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+  }
+
   
   @keyframes fadeInUp {
     0% {

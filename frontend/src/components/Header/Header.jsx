@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Header.css";
 import { assets } from "../../assets/assets";
 
 const Header = () => {
+  const mobileVideoRef = useRef(null);
+
+  useEffect(() => {
+    const video = mobileVideoRef.current;
+    if (video) {
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((error) => {
+          console.log("Autoplay prevented:", error);
+        });
+      }
+    }
+  }, []);
   return (
     <div className="header">
       <video
@@ -15,7 +28,6 @@ const Header = () => {
         preload="auto"
         disablePictureInPicture
         poster={assets.imageposter_desk}
-
       ></video>
 
       <video
@@ -28,7 +40,6 @@ const Header = () => {
         preload="auto"
         disablePictureInPicture
         poster={assets.imageposter_phone}
-
       ></video>
 
       <div className="header-contents">
